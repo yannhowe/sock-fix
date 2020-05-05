@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: carts-db
@@ -52,7 +52,7 @@ spec:
   selector:
     name: carts-db
 ---
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: carts
@@ -110,7 +110,7 @@ spec:
   selector:
     app: carts
 ---
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: catalogue-db
@@ -153,7 +153,7 @@ spec:
   selector:
     app: catalogue-db
 ---
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: catalogue
@@ -199,7 +199,7 @@ spec:
   selector:
     app: catalogue
 ---
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: front-end
@@ -246,7 +246,7 @@ spec:
   selector:
     app: front-end
 ---
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orders-db
@@ -300,7 +300,7 @@ spec:
   selector:
     app: orders-db
 ---
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orders
@@ -358,7 +358,7 @@ spec:
   selector:
     app: orders
 ---
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: payment
@@ -404,7 +404,7 @@ spec:
   selector:
     app: payment
 ---
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: queue-master
@@ -443,7 +443,7 @@ spec:
   selector:
     app: queue-master
 ---
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: rabbitmq
@@ -490,7 +490,7 @@ spec:
   selector:
     app: rabbitmq
 ---
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: shipping
@@ -548,7 +548,7 @@ spec:
   selector:
     app: shipping
 ---
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: user-db
@@ -602,7 +602,7 @@ spec:
   selector:
     app: user-db
 ---
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: user
